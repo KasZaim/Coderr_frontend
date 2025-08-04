@@ -9,8 +9,16 @@ const GUEST_LOGINS = {
     }
 }
 
-const API_BASE_URL = 'http://127.0.0.1:8000/api/';
-const STATIC_BASE_URL = 'http://127.0.0.1:8000/';
+// Automatische Umgebungserkennung für Development/Production
+const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
+
+const API_BASE_URL = isDevelopment 
+    ? 'http://127.0.0.1:8000/api/'
+    : 'https://coderr-backend-production-f3d4.up.railway.app/api/';
+
+const STATIC_BASE_URL = isDevelopment
+    ? 'http://127.0.0.1:8000/'
+    : 'https://coderr-backend-production-f3d4.up.railway.app/';
 
 
 const LOGIN_URL = 'login/';
