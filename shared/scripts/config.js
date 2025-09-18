@@ -12,13 +12,13 @@ const GUEST_LOGINS = {
 // Automatische Umgebungserkennung für Development/Production
 const isDevelopment = window.location.hostname === 'localhost' || window.location.hostname === '127.0.0.1';
 
-const API_BASE_URL = isDevelopment 
+const API_BASE_URL = isDevelopment
     ? 'http://127.0.0.1:8000/api/'
-    : 'https://coderr-backend-production-f3d4.up.railway.app/api/';
+    : 'https://api.coderr.kaserm.dev/api/';
 
 const STATIC_BASE_URL = isDevelopment
     ? 'http://127.0.0.1:8000/'
-    : 'https://coderr-backend-production-f3d4.up.railway.app/';
+    : 'https://res.cloudinary.com/djterntmo/';
 
 
 const LOGIN_URL = 'login/';
