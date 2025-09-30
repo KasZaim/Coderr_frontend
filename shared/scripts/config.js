@@ -14,7 +14,7 @@ const isDevelopment = window.location.hostname === 'localhost' || window.locatio
 
 const API_BASE_URL = isDevelopment
     ? 'http://127.0.0.1:8000/api/'
-    : 'https://api.coderr.kaserm.dev/api/';
+    : 'https://coderrapi.kaserm.dev/api/';
 
 const STATIC_BASE_URL = isDevelopment
     ? 'http://127.0.0.1:8000/'
